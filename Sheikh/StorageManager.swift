@@ -1,4 +1,3 @@
-//
 //  StorageManager.swift
 //  Sheikh
 //
@@ -25,5 +24,6 @@ class StorageManager {
             realm.delete(car)
         }
     }
+    
 }
 

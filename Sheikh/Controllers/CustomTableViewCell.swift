@@ -1,4 +1,3 @@
-//
 //  CustomTableViewCell.swift
 //  Sheikh
 //
@@ -15,4 +14,5 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var bodyStyleLabel: UILabel!
  
+    
 }
