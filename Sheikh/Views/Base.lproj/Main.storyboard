@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qkn-a8-rA0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Cars-->
+        <scene sceneID="yrI-iB-VQr">
+            <objects>
+                <tableViewController id="hXC-xf-cgz" customClass="MainViewController" customModule="Sheikh" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cqD-HL-Yln">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CarItemCell" id="71F-z8-ilO" customClass="CustomTableViewCell" customModule="Sheikh" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71F-z8-ilO" id="clv-oI-hjO">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="5C1-ty-4hk">
+                                            <rect key="frame" x="33" y="8" width="238" height="84"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Honda" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zds-On-MRE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="54.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Civic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2V-Rx-bSg">
+                                                    <rect key="frame" x="0.0" y="21" width="45.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coupe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBT-fX-ybS">
+                                                    <rect key="frame" x="0.0" y="42" width="39.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-IG-juH">
+                                                    <rect key="frame" x="0.0" y="63" width="31.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5C1-ty-4hk" firstAttribute="centerY" secondItem="clv-oI-hjO" secondAttribute="centerY" id="A2i-Sy-fL8"/>
+                                        <constraint firstItem="5C1-ty-4hk" firstAttribute="leading" secondItem="clv-oI-hjO" secondAttribute="leading" constant="33" id="Ds2-az-2VY"/>
+                                        <constraint firstItem="5C1-ty-4hk" firstAttribute="centerY" secondItem="clv-oI-hjO" secondAttribute="centerY" id="jvz-ip-UXC"/>
+                                        <constraint firstAttribute="trailing" secondItem="5C1-ty-4hk" secondAttribute="trailing" constant="70" id="yZ4-r5-KZs"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bodyStyleLabel" destination="IBT-fX-ybS" id="hua-Hb-RIa"/>
+                                    <outlet property="brandLabel" destination="Zds-On-MRE" id="l1c-GT-oeg"/>
+                                    <outlet property="modelLabel" destination="N2V-Rx-bSg" id="ghY-nE-H1z"/>
+                                    <outlet property="yearLabel" destination="ZgX-IG-juH" id="Hm3-bz-Ua8"/>
+                                    <segue destination="2hJ-NX-SoI" kind="show" identifier="showDetailSegue" id="wJc-hO-qsM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="hXC-xf-cgz" id="Eet-fk-X6Z"/>
+                            <outlet property="delegate" destination="hXC-xf-cgz" id="Jcj-f0-4fi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Cars" id="KvA-MI-vHM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sgY-i2-Tzp">
+                            <connections>
+                                <segue destination="8Ew-Pz-tqJ" kind="presentation" identifier="addCarSegue" id="q6a-ZK-sCH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4z-K6-Fxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-49.025487256371818"/>
+        </scene>
+        <!--Add Car View Controller-->
+        <scene sceneID="raH-iX-vBk">
+            <objects>
+                <viewController id="tJw-Bg-weQ" customClass="AddCarViewController" customModule="Sheikh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fb9-TZ-pny">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="sJh-nm-Jeb">
+                                <rect key="frame" x="50" y="165" width="275" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Car Brand" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WOv-K7-CBn">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="36.5"/>
+                                        <color key="backgroundColor" red="0.91567856073379517" green="0.86742448806762695" blue="0.49078905582427979" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Model" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pgB-9f-qs4">
+                                        <rect key="frame" x="0.0" y="45.5" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.91567856073379517" green="0.86742448806762695" blue="0.49078905582427979" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sON-aa-N5q">
+                                        <rect key="frame" x="0.0" y="90.5" width="275" height="36.5"/>
+                                        <color key="backgroundColor" red="0.91567856073379517" green="0.86742448806762695" blue="0.49078905582427979" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Body Style" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lnO-Uh-z17">
+                                        <rect key="frame" x="0.0" y="136" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.91567856073379517" green="0.86742448806762695" blue="0.49078905582427979" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your new car details" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZp-vJ-lZZ">
+                                <rect key="frame" x="50" y="87" width="275" height="47"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zep-IU-bZT" firstAttribute="trailing" secondItem="sJh-nm-Jeb" secondAttribute="trailing" constant="50" id="6Dw-Zz-cLB"/>
+                            <constraint firstItem="Zep-IU-bZT" firstAttribute="bottom" secondItem="sJh-nm-Jeb" secondAttribute="bottom" constant="330" id="6ia-ZL-mQC"/>
+                            <constraint firstItem="nZp-vJ-lZZ" firstAttribute="top" secondItem="Zep-IU-bZT" secondAttribute="top" constant="23" id="8lj-XH-9Ms"/>
+                            <constraint firstItem="nZp-vJ-lZZ" firstAttribute="leading" secondItem="Zep-IU-bZT" secondAttribute="leading" constant="50" id="9EY-hN-1lR"/>
+                            <constraint firstItem="nZp-vJ-lZZ" firstAttribute="width" secondItem="WOv-K7-CBn" secondAttribute="width" id="C3I-l4-nJ6"/>
+                            <constraint firstItem="sJh-nm-Jeb" firstAttribute="leading" secondItem="Zep-IU-bZT" secondAttribute="leading" constant="50" id="LBK-lh-PW1"/>
+                            <constraint firstItem="sJh-nm-Jeb" firstAttribute="top" secondItem="Zep-IU-bZT" secondAttribute="top" constant="101" id="pas-ye-nav"/>
+                            <constraint firstItem="Zep-IU-bZT" firstAttribute="trailing" secondItem="nZp-vJ-lZZ" secondAttribute="trailing" constant="50" id="w3v-mE-vxf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zep-IU-bZT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sdz-4S-FsN">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="jmJ-ZK-tKY">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="tJw-Bg-weQ" id="vqK-Tx-iWa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="o3h-9A-eot">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="tJw-Bg-weQ" id="vpl-8C-TqR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="jmJ-ZK-tKY" id="6bS-0v-Vzz"/>
+                        <outlet property="carBodyStyle" destination="lnO-Uh-z17" id="1Ji-Om-Euy"/>
+                        <outlet property="carBrand" destination="WOv-K7-CBn" id="z7j-ot-2iv"/>
+                        <outlet property="carModel" destination="pgB-9f-qs4" id="dTp-xJ-JWc"/>
+                        <outlet property="carYear" destination="sON-aa-N5q" id="ZOx-kH-3H5"/>
+                        <outlet property="saveButton" destination="o3h-9A-eot" id="zbj-od-pws"/>
+                        <segue destination="TJx-wF-Wj2" kind="unwind" identifier="unwindToMain" unwindAction="unwindSegue:" id="Vl3-64-RDf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpF-5r-33D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="TJx-wF-Wj2" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1718" y="-743"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KZ4-Yi-eFb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qkn-a8-rA0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wid-xJ-CZE">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hXC-xf-cgz" kind="relationship" relationship="rootViewController" id="QgY-UG-ZWB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCn-ar-1Nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="-49"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KYu-I0-53L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ew-Pz-tqJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X90-XB-Izp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tJw-Bg-weQ" kind="relationship" relationship="rootViewController" id="hz0-se-m3L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHG-vg-hfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-743"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="7Ne-V6-hpg">
+            <objects>
+                <viewController id="2hJ-NX-SoI" customClass="DetailsViewController" customModule="Sheikh" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Htb-Tw-vIi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="oYh-aV-9yk">
+                                <rect key="frame" x="50" y="165" width="275" height="172"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Car Brand" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIL-nY-MRD">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="36.5"/>
+                                        <color key="backgroundColor" red="0.91567856069999998" green="0.86742448809999995" blue="0.49078905579999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Model" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MnD-FW-xof">
+                                        <rect key="frame" x="0.0" y="45.5" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.91567856069999998" green="0.86742448809999995" blue="0.49078905579999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Year" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j9F-gI-FYP">
+                                        <rect key="frame" x="0.0" y="90.5" width="275" height="36.5"/>
+                                        <color key="backgroundColor" red="0.91567856069999998" green="0.86742448809999995" blue="0.49078905579999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Body Style" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SIA-lb-eAS">
+                                        <rect key="frame" x="0.0" y="136" width="275" height="36"/>
+                                        <color key="backgroundColor" red="0.91567856069999998" green="0.86742448809999995" blue="0.49078905579999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit your car details if needed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcJ-vI-bg4">
+                                <rect key="frame" x="50" y="87" width="275" height="47"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="20"/>
+                                <color key="textColor" red="0.92361843585968018" green="0.62052726745605469" blue="0.69583421945571899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6GU-Bv-gIC" firstAttribute="trailing" secondItem="QcJ-vI-bg4" secondAttribute="trailing" constant="50" id="0Z9-ee-dCd"/>
+                            <constraint firstItem="6GU-Bv-gIC" firstAttribute="trailing" secondItem="oYh-aV-9yk" secondAttribute="trailing" constant="50" id="9t2-EN-JZw"/>
+                            <constraint firstItem="QcJ-vI-bg4" firstAttribute="leading" secondItem="6GU-Bv-gIC" secondAttribute="leading" constant="50" id="KAT-TT-ybO"/>
+                            <constraint firstItem="6GU-Bv-gIC" firstAttribute="bottom" secondItem="oYh-aV-9yk" secondAttribute="bottom" constant="330" id="QAF-BV-iOV"/>
+                            <constraint firstItem="oYh-aV-9yk" firstAttribute="leading" secondItem="6GU-Bv-gIC" secondAttribute="leading" constant="50" id="cbT-kQ-Znx"/>
+                            <constraint firstItem="QcJ-vI-bg4" firstAttribute="top" secondItem="6GU-Bv-gIC" secondAttribute="top" constant="23" id="dhP-Ii-9ry"/>
+                            <constraint firstItem="oYh-aV-9yk" firstAttribute="top" secondItem="6GU-Bv-gIC" secondAttribute="top" constant="101" id="iqi-Da-P8u"/>
+                            <constraint firstItem="QcJ-vI-bg4" firstAttribute="width" secondItem="QIL-nY-MRD" secondAttribute="width" id="ySO-rB-9j6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6GU-Bv-gIC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yza-mv-KV1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Sz1-cy-z0h">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="2hJ-NX-SoI" id="t7G-fA-IJH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="carBodyStyle" destination="SIA-lb-eAS" id="Ftl-Nz-CGv"/>
+                        <outlet property="carBrand" destination="QIL-nY-MRD" id="Fgm-r2-Nqx"/>
+                        <outlet property="carModel" destination="MnD-FW-xof" id="vRL-gx-CrA"/>
+                        <outlet property="carYear" destination="j9F-gI-FYP" id="uOR-NS-3WD"/>
+                        <outlet property="saveButton" destination="Sz1-cy-z0h" id="OfD-r6-IKt"/>
+                        <segue destination="Wea-1x-d5A" kind="unwind" identifier="unwindToMain" unwindAction="unwindSegue:" id="6rT-96-3zd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ptp-M0-mVP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Wea-1x-d5A" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="-49"/>
+        </scene>
+    </scenes>
+</document>
